@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+    http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+	<context:annotation-config />
+	<context:component-scan base-package="com.trs"></context:component-scan>
+	<bean
+		class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"></bean>
+	<bean
+		class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"></bean>
+	<!-- 是把properties文件读入内存 -->
+	<bean id="propetyConfigure"
+		class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+		<property name="location">
+			<value>classpath:configInfo.properties</value>
+		</property>
+		<property name="fileEncoding" value="utf-8"></property>
+	</bean>
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PreferencesPlaceholderConfigurer">
+		<property name="properties" ref="propetyConfigure" />
+	</bean>
+	<!-- 是进行把properties文件中的值注入到类中 -->
+	<!-- <bean id="propety" class="com.trs.common.TRSConnPropety"> <property 
+		name="url"> <value>${url}</value> </property> <property name="username"> 
+		<value>${username}</value> </property> <property name="password"> <value>${password}</value> 
+		</property> </bean> -->
+</beans>
+ 

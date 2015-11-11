@@ -1,0 +1,53 @@
+*{margin:0px;padding:0px;}
+ul{line-style:none;}
+a { color:#434343; text-decoration: none; }
+a:link { color:#333; text-decoration: none; }
+
+#topbar .topbar-bd ,#jsuo ,#jsuo_x{width:1100px;margin:0 auto;}
+/*head-menu*/
+#doc-view{min-width:1002px/*最小宽度，内容大于宽则换行*/;position:relative;width:100%;z-index:1;height:1140px;}
+#doc-hd{position:relative;z-index:2;}
+#doc-bd{height:1140px;background-color:rgba(170, 185, 183, 0.31);}
+#topbar{position:relative;height:50px;line-height:50px;border:none;border-bottom:1px solid #d6d6d6;background:transparent;}
+#topbar .topbar-bg{position:absolute;top:0px;left:0px;width:100%;height:50px;background-color:#1AA3A8;opacity:.6;}
+#topbar .topbar-bd{position:relative;margin:0 auto;zoom:1}
+#top-menu{float:left;}
+#top-menu a{/*min-height:30px;*/color:aliceblue;margin:0px 5px;padding:15px 15px 15px 47px;background:url('../image/logo.png') no-repeat 0px 3px;}
+#gw {float: left;height: 20px;font-size: 23px;font-family:"\65B9\6B63\59DA\4F53";line-height: 25px;font-weight:bold;}
+#top-tool{float:right;line-height:48px;font-size:15px;width:300px;}
+#top-tool a{color:#797979;position:relative;}
+#top-tool a:hover{color:white;font-weight:bold;font-family:"\65B9\6B63\59DA\4F53";}
+.sline {padding: 0 5px 0 4px;font-size: 20px;color:#ccc;}
+
+/*主内容   检索区域*/
+/*检索区*/
+#jsuo{position:relative;height:90px;margin:0 auto;}
+
+.c{display:-webkit-box;position:absolute;margin-left:250px;margin-top:23px;box-shadow: 0 1px 1px rgba(6, 0, 1, .09); }
+.ipt{-webkit-box-flex: 1;border:1px solid #36b148;background:#fff;
+border-radius:8px;width:500px;line-height:45px;}
+.search_str{
+vertical-align: middle;outline: 0;border:none;border-radius:8px;cursor:text;background-color:transparent;
+font-size: 16px; line-height:35px; width:450px;padding-left:5px;padding-top:4px;}
+.btn{width: 101px;margin-left: 5px;border: 1px solid #36b148;border-radius: 8px;
+background-image: -webkit-linear-gradient(bottom, #64cd4f 31%, #43d454);
+box-shadow: 0 1px 1px rgba(6, 0, 1, .09);}
+.search_btn{
+outline: 0;
+background:none; border:none;  width: 100px; line-height: 45px; color: white;font-size:16px;cursor:pointer;}
+/*结果显示区*/
+#zx{height:300px;background-color:white;padding:30px 5px 40px 5px;}
+#zx_1{height:100%;background-color:white;margin:0 2px;}
+
+#jsuo_x{position:relative;height:908px;margin:0 auto;background-color:white;}
+.n{position:absolute;display: -webkit-box;-webkit-box-orient: horizontal;/*box-orient 属性规定框的子元素应该被水平或垂直排列,horizontal	在水平行中从左向右排列子元素。vertical	从上向下垂直排列子元素。*/
+vertical-align: middle;width:100%;}
+.child{border: none;border-bottom:1px solid #36b148;margin: 0px;
+font-weight: bold;font-family: Georgia;-webkit-box-align: center;overflow:hidden;
+}
+/*定义两个可伸缩的 p 元素。如果父元素的总宽度是 300 像素，则 #p1 的宽度是 100 像素，而 #p2 的宽度是 200 像素*/
+#bt{-webkit-box-flex: 1;height:450px;width:392px;background-color:white;float:left;padding-left:90px;}
+#dt{-webkit-box-flex: 2;height:450px;width:550px;background-color:white;float:left;padding-left:20px;padding-right:48px;}
+
+
+
