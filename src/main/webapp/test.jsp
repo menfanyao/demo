@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>trsdemo</title>
 <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
-
+<!--测试一下github -->
 </head>
 <body>
 <input type="text" id="searchtext">
